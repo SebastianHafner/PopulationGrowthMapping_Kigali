@@ -1,7 +1,7 @@
 _BASE_: "base_popgrowthmapping.yaml"
 
 TRAINER:
-  LR: 1e-5
+  LR: 1e-4
 
 CHANGE_DETECTION:
   PRETRAINING:
