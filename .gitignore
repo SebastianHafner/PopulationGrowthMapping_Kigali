@@ -1,4 +1,5 @@
 wandb/
+.idea
 *ipynb
 .ipynb_checkpoints/
 utils/__pycache__
