@@ -1,0 +1,5 @@
+_BASE_: "base_popmapping.yaml"
+
+TRAINER:
+  LR: 1e-3
+  BATCH_SIZE: 16
