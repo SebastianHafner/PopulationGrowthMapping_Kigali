@@ -14,14 +14,14 @@ Population growth mapping using a Siamese network that incorporates the pretrain
 
 ## 1 Download the data
 
-Unfortunately, we are not allowed to disclose the census data for Kigali. However, in order to facilitate running our code, we provide a dummy dataset with fake population data. The Sentinel-2 MSI composites (input data), on the other hand, are made available. Furthermore, we make all trained models publicly available.
+The dataset is available on Zenodo:
 
-[Dummy dataset](https://tinyurl.com/2cu4j5ke) (Google Drive)
-
-[Trained models](https://tinyurl.com/423jzj32) (Google Drive)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7712047.svg)](https://doi.org/10.5281/zenodo.7712047)
 
 
+Furthermore, our trained models are available on Google Drive
 
+[Trained models](https://tinyurl.com/423jzj32)
 
 
 ## 2 Network training
@@ -51,7 +51,7 @@ python train_weaklysupervised.py -c popgrowthmapping_pretrained -o 'path to outp
 
 ## 3 Inference and assessment
 
-We provide functions to evaluate the population mapping and population growth mapping results. However, since we cannot release the full dataset, not all evaluation functions may be useful.
+We provide functions to evaluate the population mapping and population growth mapping results.
 
 First, run the file ``inference.py`` to produce a population growth map and the quantitative results for a given config:
  
@@ -68,9 +68,24 @@ Then, run the file``assessment.py`` to quantitative and qualitative assess netwo
 
 # Credits
 
-If you find this work useful, please consider citing:
+If you find this work useful, please consider citing the paper:
 
 
   ```bibtex
 
+  ```
+
+or the dataset:
+
+  ```bibtex
+  @dataset{hafner_sebastian_2023_7712047,
+  author       = {Hafner, Sebastian and Georganos, Stefanos and Mugiraneza, Theodomir},
+  title        = {PopulationGrowthDataset\_Kigali},
+  month        = mar,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {version 1},
+  doi          = {10.5281/zenodo.7712047},
+  url          = {https://doi.org/10.5281/zenodo.7712047}
+}
   ```
